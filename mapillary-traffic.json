@@ -1,0 +1,31 @@
+{
+    "version": 8,
+    "sources": {
+        "mapillary-source": {
+            "tiles": [
+                "https://a.mapillary.com/v3/tiles/objects/{z}/{x}/{y}.mvt"
+            ],
+            "type": "vector",
+            "minzoom": 0
+        }
+    },
+    "layers": [
+        {
+            "id": "mapillary-objects",
+            "type": "symbol",
+            "source": "mapillary-objects-source",
+            "source-layer": "mapillary-objects-trafficsigns",
+            "interactive": true,
+            "minzoom": 14,
+            "layout": {
+              "icon-image": "{value}",
+              "icon-allow-overlap": true,
+              "symbol-avoid-edges": true,
+            },
+            "paint": {
+              "text-color": "#fff",
+              "text-halo-color": "#000",
+            }
+        }
+    ]
+}

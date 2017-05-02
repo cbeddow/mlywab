@@ -1,0 +1,68 @@
+
+  <div class="wrapper">
+    <div class"mly-wrapper">
+      <div id="mly"></div>
+      <p class="Notice block black bg-yellow h6 p1 center">Click on the map to display the closest photo</p>
+    </div><br>
+
+    <p style="font-size:9;">Mapillary</p><br>
+    <div>
+      <label class="switch"><input
+        id="mapillarysequences"
+        data-dojo-type="dijit/form/CheckBox"
+        data-dojo-attach-point="defaultCoverage"
+        type="checkbox"
+      ><div class="slider round"></div></label>
+      <label for="mapillarysequences" class="coveragetext">Show Mapillary coverage</label>
+    </div><br>
+
+    <p style="font-size:9;">Traffic signs</p><br>
+    <div>
+      <label class="switch"><input
+        id="mapillarytraffic"
+        data-dojo-type="dijit/form/CheckBox"
+        data-dojo-attach-point="defaultCoverage"
+        type="checkbox"
+      ><div class="slider round"></div></label>
+      <label for="mapillarytraffic" class="coveragetext">Show detected traffic signs</label>
+    </div><br>
+
+    <div>
+      <p style="font-size:9;">Segmentation</p><br>
+      <label class="switch"><input
+        id="segmentations"
+        data-dojo-type="dijit/form/CheckBox"
+        data-dojo-attach-point="segmentations"
+        type="checkbox"
+      ><div class="slider round"></div></label>
+      <label for="segmentations" class="coveragetext">Select a photo to show identified photo features</label>
+    </div><br>
+
+    <div>
+      <label><p style="font-size:9;">User: </p></label><br>
+      <input
+          data-dojo-type="dijit/form/TextBox"
+          data-dojo-attach-point="usernames"
+          type="text"
+          style="background-color:#D7DADD;color:#474A4E;border-radius:5px;outline: none !important;border: none; box-shadow: none;width:80%;"
+          value=" username"
+      >
+    </div><br>
+
+    <div>
+      <label><p style="font-size:9;">Date: </p></label><br>
+      <input
+          data-dojo-type="dijit/form/TextBox"
+          data-dojo-attach-point="usernames"
+          type="text"
+          style="background-color:#D7DADD;color:#474A4E;border-radius:5px;outline: none !important;border: none; box-shadow: none;width:20%;"
+          value=" from"
+      >    <input
+          data-dojo-type="dijit/form/TextBox"
+          data-dojo-attach-point="usernames"
+          type="text"
+          style="background-color:#D7DADD;color:#474A4E;border-radius:5px;outline: none !important;border: none; box-shadow: none;width:20%;"
+          value=" to"
+      >
+    </div>
+  </div>

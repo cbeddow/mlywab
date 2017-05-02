@@ -1,0 +1,122 @@
+@import url("//unpkg.com/mapillary-js@2.5.0/dist/mapillary.min.css");
+
+/* add additional custom styles */
+
+.block {
+    display: block;
+}
+
+.rounded {
+    border-radius: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.p1 {
+    padding: 2rem;
+}
+
+.black {
+    color: black;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+
+.mapillary-js {
+   position: relative;
+   width: 100%;
+   height: auto;
+   padding-bottom: 75%;
+}
+
+.mapillary-js canvas {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.Rect span {
+    display: none;
+}
+
+.hide-viewer-content #mly {
+   display: none;
+}
+
+.Notice {
+   display: none;
+}
+
+.hide-viewer-content .Notice {
+   display: block;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 9px;
+  width: 9px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #E6E9ED;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #36AF6D;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #36AF6D;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 12px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.coveragetext {
+  font-size: 16;
+}
+br {
+      line-height: 70%;
+}
